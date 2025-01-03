@@ -1,0 +1,395 @@
+.modall {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 5rem;
+  height: 14rem;
+  z-index: 1000;
+}
+.alinhar{
+  display: flex;
+  gap:2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+}
+.alinhar input{
+  height: 1rem;
+} 
+fieldset{
+  height: 33rem;
+  width: 26rem;
+  outline: none;
+  border: none;
+}
+.banq{
+  font-size: 3rem;
+}
+.inputspace{
+  margin-bottom: 2rem;
+}
+  input:focus {
+    border-color: #ff9800;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+  }
+  .background{
+    width: 100%;
+    height: 47rem;
+  }
+  .cadastro-container{
+    position: absolute;
+  }
+  
+  .cadastro-form h1{
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+  margin-bottom: 0.14rem;
+  }
+  .form-group i{
+    position: absolute;
+    right: 50px;
+    font-size: 20px;
+    top: 55%;
+    
+  }
+  .form-group input{
+    height: 2.8rem;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 30px;
+  }
+
+  .form-group input::placeholder{
+    color: #d3d3d3;
+    margin-left: 1rem;
+  }
+
+
+  .form-group label{
+    font-size: 1.2rem;
+  }
+  .form-group input{
+    width: 100%;
+    height: 10px;
+  }
+  .form-group{
+    line-height: 2rem;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  #numero-cartao{
+    margin-top: 2rem;
+  
+  }
+ 
+  #confirmarsenha{
+    width: 28.5rem;
+  }
+  #erro {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+  .close{
+    font-size: 3.5rem;
+    line-height: 1px;
+    position: absolute;
+    margin-left: 68rem;
+    cursor: pointer;
+  }
+  .cadastro-container img{
+    width: 38.2rem;
+    height: 39.2rem;
+    margin-top: -1.9rem;
+    margin-bottom: -3.5rem;
+    margin-left: -1.9rem;
+    border-radius: 20px 0px 0px 20px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  
+  border-right: 2px solid black;
+    filter: brightness(50%);
+}
+  .cadastro-container{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),0 0 10px black,0 0 20px black, inset 0 1px 3px rgba(255, 255, 255, 0.2); 
+    border: 3px solid transparent; 
+    border-radius: 20px; 
+    backdrop-filter: blur(15px) saturate(150%); 
+    -webkit-backdrop-filter: blur(15px) saturate(100%);
+    padding: 30px; 
+    color: #fff;    
+    font-family: 'Arial', sans-serif; 
+    overflow: hdden; 
+     color: black;
+    font-weight: bold;
+     margin-left: 15rem;
+     display: flex;
+  }
+  
+  .mod button {
+    width: 29.5rem;;
+    padding: 12px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: background-color 0.4s ease;
+  }
+  
+  button:hover {
+    background-color: #c77700;
+    color: black;
+  }
+  .form-actions{
+    margin-right: 1.3rem;
+    margin-left: 1.3rem;
+  
+  }
+  .form-actions{
+    display: flex;
+    justify-content: space-between;
+  }
+
+ 
+  .action1{
+    margin: 0rem 2.5rem;
+  }
+  .action3{
+   text-align: center;
+   margin-top: 1.5rem;
+   margin-left: 9rem;
+  }
+ 
+.net ul {
+  margin-left: 5rem;
+  padding: 0;
+  display: flex; 
+}
+
+.net ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.net ul li a {
+  position: relative; 
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 53px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 20px;
+  color: goldenrod;
+  transition: .5s;
+}
+
+.net ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.net ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+.net ul li a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10,0 0 15px #ffee10;
+  text-shadow: 0 0 5px #ffee10,0 0 15px #ffee10;
+}
+
+.modal-content a{
+  text-decoration: none;
+  color: white;
+}
+
+.image-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.login-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 20%;
+  color: #afafaf;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 35rem;
+}
+
+.overlay-text h1 {
+  margin-bottom: 15px;
+}
+
+.overlay-text span {
+  color: gold;
+  
+}
+
+.overlay-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: normal;
+  text-align: center;
+}
+
+.gold1{
+margin-top: -3rem;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 6rem;
+  font-style: normal;
+  color: hsl(51, 100%, 50%);
+  text-shadow: 0px 0px 5px rgba(255, 223, 0, 0.8), 0px 0px 10px rgba(255, 223, 0, 0.6);
+
+
+}
+.gold{
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+#loginadmin{
+
+  width: 30rem;
+}
+
+.formularios{
+  display: flex;
+}
+#loginadmin {
+
+display: none;
+margin-right: 3rem;
+
+}
+#loginusario{
+  display: nne;
+}
+#tituloadministrador{
+  display: none;
+}
+
+
+/*-----Reservar Model-----*/
+/*-----Reservar Model-----*/
+/*-----Reservar Model-----*/
+
+.modelreserva {
+  display: none;
+  justify-content: center;
+  align-items: center; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000; 
+  transition: 1s;
+
+}
+.reservar1 .div{
+  background-color:  #0F172B;;
+  border: 1px groove #FEA116;
+  box-shadow: 0 0 10px #FEA116;
+}
+.reservar1 img{
+  width: 100%;
+  height: 100%;
+  border: 1px groove #FEA116;
+  box-shadow: 0 0 10px #FEA116;
+}
+.modelreserva .reservar1{
+  display: flex;
+ padding-top: 8rem;
+ padding-bottom: 8rem;
+position: absolute;
+z-index: 10001;
+margin-left: 10rem;
+margin-top: -3rem;
+}
+.reservar1 h1{
+  color: white;
+}
+.reservar1 h2{
+  margin-top: rem;
+}
+.reservar1 h1,h2{
+  text-align: center;
+}
+.reservar1 div{
+width: 40rem;
+}
+.reservar1 div form div{
+  margin-bottom: 1rem;
+}
+.reservar1 div form{
+margin-left: 4rem;
+margin-top: 2rem;
+}
+
+.reservar1 form button{
+  width: 30.6rem;
+  height: 3rem;
+  border-radius: 3px;
+  background-color: #FEA116;
+  border: none;
+  margin-bottom: 3rem;
+}
+.reservar1 form textarea{
+  width: 30.6rem;
+  border-radius: 3px;
+}
+.reservar1 form input{
+  height: 3rem;
+  width: 15rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  border: none;
+}
+#fecharBtn{
+  justify-content: right;
+  display: flex;
+  margin-right: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #FEA116;
+}
+

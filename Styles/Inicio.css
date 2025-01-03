@@ -1,0 +1,637 @@
+/*----Classes Especiais----*/
+/*----Classes Especiais----*/
+
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
+}
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+.fw-normal {
+    font-weight: 400 !important
+}
+.text-primary {
+    color: #FEA116 !important
+}
+
+.ps-4{
+    flex-direction: column;
+    margin-right: 1.5rem;
+    margin-top: 10px;
+}
+.ps-4 h6{
+    font-weight: bold;
+    text-transform: uppercase 
+}
+.col-sm-6{
+    border-left:5px solid  #FEA116;
+    margin-left: 1rem;
+}
+.pop{
+    margin-left: 4rem;
+}
+.col-sm-6 h1{
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+button{
+  cursor: pointer;
+}
+
+/*----Classes Especiais----*/
+/*----Classes Especiais----*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666565;
+  background-color: #F1F8FF;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+}
+
+header a {
+text-decoration: none;
+color: white;
+}
+header nav{
+    background-color:  #0F172B;;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    color: white;
+    align-items: center;
+
+}
+header nav div{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+header nav div .ul1{
+list-style: none;
+display: flex;
+gap: 1rem;
+}
+#pagina{
+display: none;
+}
+
+#cadastrar{
+  padding: 0.5rem 2rem;
+  border: 2px solid black;
+  background-color: black;
+  color: white; 
+  cursor: pointer;
+  margin-right: -1rem;
+  margin-left: 2rem;
+border-radius: 7px;
+}
+
+.background2{ 
+    background-color:  #0f172bc4;;
+    width: 100%;
+    height: 102vh;
+    display: flex;
+    gap: 5rem;
+   
+}
+.background{
+    background-color: blue;
+    width: 100%;
+    height: 90vh;
+}
+.background2 img{
+  animation: aparecerimg 2s ease-in-out, apare 10s linear infinite;
+  margin-left: 50rem;
+}
+@keyframes apare{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+    
+  }
+}
+
+@keyframes aparecerimg{
+  0%{
+    margin-left: 100rem;
+    opacity: 0; 
+  }
+  100%{
+    margin-left: 50rem;
+    opacity: 1; 
+  }
+}
+
+.slogan{
+    margin-top: 15rem;
+    margin-left: 6rem;
+    width: 40rem;
+    animation: aparecer 2s ease-in-out;
+    position: absolute;
+}
+
+
+@keyframes aparecer{
+  0%{
+    margin-left: -30rem;
+    opacity: 0; 
+  }
+  100%{
+    margin-left: 5rem;
+    opacity: 1; 
+  }
+}
+
+.slogan h1{
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.slogan p{
+    color: white;
+}
+
+.slogan button{
+  border: none;
+  border-radius: 5px;
+  background-color: #FEA116;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  transition:0.5s;
+  margin-top: 2rem;
+}
+
+.slogan button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #FEA116, 0 0 20px #FEA116;
+}
+
+/*---------Main---------------*/
+/*---------Main---------------*/
+/*---------Main---------------*/
+main{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin: 0rem 5rem;
+border-left: 1px solid rgb(63, 63, 63);
+border-right: 1px solid rgb(77, 76, 76);
+}
+
+.por-que-escolher {
+    padding: 0rem 1rem;
+    padding-top: 3.5rem;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center; 
+    margin: -0rem 0rem;
+  }
+  
+  .por-que-escolher h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .motivos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 2rem;
+    padding-left: 4rem;
+    animation: motivo 2s ease-in-out ;
+  }
+  @keyframes motivo{
+    0%{
+      margin-top: 10rem;
+      opacity: 0; 
+    }
+    100%{
+      margin-top: 0rem;
+      opacity: 1; 
+    }
+  }
+  
+  .motivos:in-viewport {
+    opacity: 1;
+    margin-top: 0rem;
+    animation: motivo 2s ease-in-out;  }
+  .motivo {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .motivo h3 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 1rem;
+  }
+  
+  .motivo p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .motivo:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    background-color: #FEA116;
+    color: black;
+  }
+  @media (max-width: 767px) {
+    .por-que-escolher h2 {
+      font-size: 2rem;   }
+  
+    .motivo h3 {
+      font-size: 1.3rem;   }
+  
+    .motivo p {
+      font-size: 0.9rem;
+      }
+  }
+  
+  /*-----Sobre Nos-------*/
+  /*-----Sobre Nos-------*/
+  /*-----Sobre Nos-------*/
+
+.sobre{
+margin: -2rem 0rem;
+display: flex;
+background-color: #ffffff;
+}
+  .img1{
+    width: 18rem;}
+  .img2{
+    width: 13rem;
+  }
+  .img3{
+    margin-left: 5rem;
+    margin-bottom: 17rem;
+    width: 13rem;
+  }
+  .img4{
+    margin-bottom: 12rem;
+    width: 18rem;
+  }
+  .sobreimg{
+    width: 50rem;
+    margin-right: 1rem;
+    margin-top: 8rem;
+    padding-left: 3rem;
+  }
+.sobreinfo{
+    margin-top: 18rem;
+    width: 45rem;
+    height: 20rem;
+    padding-right: 3rem;
+
+}
+.sobreinfo h5{
+  font-size: 1.3rem;
+}
+.sobreinfo h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.mb-4{
+    margin-bottom: 1rem;
+}
+
+.infonumero{
+    font-size: 3rem;
+}
+
+.sobreexp{
+    display: flex;
+    margin-top: 2rem;
+
+}
+.sobreexp div{
+    display: flex;
+}
+
+/*-----Prato-----*/
+/*-----Prato-----*/
+/*-----Prato-----*/
+.pratosmenu{
+  text-align: center;
+    margin-bottom: 2rem;
+  }
+  .pratinho a{
+    display: flex;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black;
+  }
+  .prato{
+    display: flex;
+    justify-content: center;
+  }
+  .pratinho{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: groove gray 3px;
+}
+
+/*-----Pratos-----*/
+/*-----Pratos-----*/
+/*-----Pratos-----*/
+
+.parato{
+margin: 2rem 0rem;
+background-color: #ffffff;
+}
+.parato h5{
+  font-size: 1.3rem;
+}
+.parato h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.pratos{
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  line-height: 2rem;
+}
+.pratos1 div{
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+.pratos2 div{
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+.pratos a{
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.pratos button{
+  border: none;
+  border-radius: 5px;
+  background-color: #FEA116;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  transition:0.5s;
+}
+
+.pratos button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #FEA116, 0 0 20px #FEA116;
+}
+
+
+.mb-0{
+border-bottom: groove 1px gray;  
+justify-content: space-between;
+display: flex;
+}
+
+.vermenu{
+ text-align: center;
+  margin: 3rem 0rem;
+}
+.vermenu a{
+  margin: 9rem;
+  text-decoration: none;
+  padding:1rem 28.1rem;
+  height: 3rem;border-radius: 3px;
+  background-color: #FEA116;
+  border: none;
+}
+
+/*-----Reerva Model-----*/
+/*-----Reerva Model-----*/
+/*-----Reerva Model-----*/
+.reserva{
+margin: -3rem 0rem;
+background-color: #ffffff;
+}
+
+.reservar h1{
+  color: white;
+}
+.reservar h2{
+  margin-top: 2rem;
+}
+.reservar h1,h2{
+  text-align: center;
+}
+
+.reservar{
+  display: flex;
+ padding-top: 8rem;
+ padding-bottom: 8rem;
+  background-color: #ffffff;
+}
+
+
+.reservar img{
+  width: 100%;
+  height: 100%;
+}
+.div{
+  background-color:  #0F172B;;
+}
+.reservar div{
+  width: 45rem;
+}
+.reservar div form div{
+  margin-bottom: 1rem;
+}
+.reservar div form{
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.reservar form button{
+  width: 38.6rem;
+  height: 3rem;border-radius: 3px;
+  background-color: #FEA116;
+  border: none;
+}
+.reservar form textarea{
+  width: 38.6rem;
+  border-radius: 3px;
+}
+.reservar form input{
+  height: 3rem;
+  width: 19rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  border: none;
+}
+
+
+/*-----LogIn Model-----*/
+/*-----LogIn Model-----*/
+/*-----LogIn Model-----*/
+
+
+/*-----Footer-----*/
+/*-----Footer-----*/
+/*-----Footer-----*/
+footer{
+  background-color:  #0F172B;
+  border-bottom:10px solid black;
+
+}
+footer h4{
+  font-size: 1.5rem;
+}
+.footercontainer{
+  display: flex;
+  gap: 8rem;
+  color: #f7f7f7;
+  display: flex;
+  border-bottom: groove rgb(70, 70, 70) 1px;
+  margin: 0rem 7rem;
+  margin-top: 1rem;
+line-height: 2rem;
+  padding-top: 2rem;
+}
+.pages{
+display: flex;
+flex-direction: column;
+}.pages a{
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.container{
+  margin: 0rem 7rem;
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.menufinal{
+display: flex;
+justify-content: space-between;
+color: white;
+}
+.footer-menu a{
+text-decoration: none;
+border-right: 1px groove rgb(58, 58, 58);
+color: white;
+padding: 0rem 1rem;
+}
+
+.footer-menu a:last-child{
+border-right: none;
+}
+
+
+footer input{
+  width: 14rem;
+  height: 2rem;
+}
+
+footer button{
+  border: none;
+  border-radius: 5px;
+  background-color: #FEA116;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  transition:0.5s;
+}
+
+footer button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #FEA116, 0 0 20px #FEA116;
+}
+
+
+.redesoci ul {
+  display: flex;
+  justify-content: center;margin-bottom: 2rem;
+}
+
+.redesoci ul li {
+  list-style: none;
+}
+
+.redesoci ul li a {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  text-align: center;
+  font-size: 23px;
+  margin: 0 8px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+.redesoci ul li a .icon {
+  position: relative;
+  color: #ffffff;
+  transition: .5s;
+  z-index: 3;
+}
+
+.redesoci ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.redesoci ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.redesoci ul li a:hover:before {
+  top: 0;
+}
+
+.redesoci ul li:nth-child(1) a:before{
+  background: #FEA116;
+}
+
+.redesoci ul li:nth-child(2) a:before{
+  background: #FEA116;
+}
+
+.redesoci ul li:nth-child(3) a:before {
+  background: #FEA116;
+}
+
+.redesoci ul li:nth-child(4) a:before {
+  background: #FEA116;
+}

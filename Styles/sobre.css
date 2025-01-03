@@ -1,0 +1,63 @@
+.equipe .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.equipe h5{
+    font-size: 1.5rem;
+}
+.equipe h1{
+    font-size: 2rem;
+}
+.equipe{
+    text-align: center;
+    background-color: white;
+}
+.divimg{
+    display: flex;
+    justify-content: center;
+        width: 17rem;
+}
+.row img{
+width: 100%;
+border-radius: 50%;
+padding: 1rem;
+margin-left: 1rem;
+}
+.chefes{
+    width: 18rem;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+}
+.chefes div{
+    text-align: center;
+}
+
+.background2{ 
+    background-color:  #0f172bc4;;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.background{
+    background-color: blue;
+    width: 100%;
+    height: 60vh;
+}
+.back{
+    margin: 0rem 5rem;
+    line-height: 1rem;
+}
+
+.us{
+margin-top: 10rem;
+color: white;
+font-size: 5rem;
+background-color: none;
+font-weight: normal;
+text-decoration: underline;
+}
